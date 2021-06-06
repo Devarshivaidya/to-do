@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+  <div class="card">
+    <div class="card-header">
+      <h1>To-do list</h1>
+    </div>
+    <div class="card-body">
+        <% newListItems.forEach(function(item, index){ %>
+          <form action="/delete"  method="post">
+                    <div id="leftbox">
+                      <p><%= index+1%></p>   
+                    </div>
+                      
+                       <input type="hidden" name="checkbox" value="<%=item._id %>">
+                       <div id="middlebox">  
+                      <p><%= item.name %></p>
+                      </div>
+                      <div id="rightbox">
+                        <button onChange="this.form.submit()" class="button">Delete</button>
+                      </div>                        
+                </form>
+              <% }); %>
+          
+    </div> 
+    <div class="card-footer">
+      <form class="item" action="/" method="post">
+            <div class="left">
+              <input type="text" name="n" placeholder="Add new item to To-do">
+            </div>
+            <div class="right">
+              <button id="b" type="submit" <span id="s2"></span>+</span></button> 
+            </div>      
+      </div>    
+     
+      </form>
+  </div>
+    </body>
+</html>

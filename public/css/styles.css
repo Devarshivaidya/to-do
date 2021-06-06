@@ -1,0 +1,85 @@
+h1{
+    color: #7037E9;
+    padding: 10px;
+}
+.card {
+  margin-top: 100px;
+  margin-left: 450px;
+  margin-right: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+}
+
+ol{
+  list-style-type: decimal;
+}
+
+input[type="text"]{
+    text-align: center;
+    height: 40px;
+
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    font-weight: 200;
+    width: 313px;
+    
+}
+input[type="text"]:focus{
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 tomato;
+}
+::placeholder{
+    opacity: 1;
+    
+}
+p{
+    font-size: 20px;
+}
+#b{
+  width:60px;
+  height:auto;
+  background-color: rgb(245, 182, 65);
+  border: none;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+.button{
+  width:150px !important;
+  color:white; 
+  background-color:red;
+  text-align: center;
+
+}
+.left {
+  float:left; 
+  width:40%;
+  margin-top: 10px;
+}
+.right{
+  float:right;
+  width: 50%;
+  margin-top: 18px;
+  margin-right: 50px;
+  
+}
+
+#leftbox {
+  float:left; 
+  width:25%;
+  height:40px;
+}
+#middlebox{
+  float:left; 
+  width:40%;
+  height:40px;
+}
+#rightbox{
+  float:left;
+  width:25%;
+  height:40px;
+}
